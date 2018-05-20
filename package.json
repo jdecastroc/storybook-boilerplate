@@ -1,0 +1,44 @@
+{
+  "name": "storybook-boilerplate",
+  "version": "1.0.0",
+  "description": "Library of components",
+  "main": "index.js",
+  "scripts": {
+    "start": "start-storybook -p 9001 -c .storybook",
+    "test": "jest",
+    "test-coverage": "jest --coverage --collectCoverageFrom=src/**/*.jsx"
+  },
+  "repository": "https://github.com/jdecastroc/storybook-boilerplate",
+  "author": "Jorge de Castro <jdecastrocabello@gmail.com> ",
+  "license": "MIT",
+  "devDependencies": {
+    "@storybook/addon-storyshots": "^3.4.3",
+    "@storybook/react": "^3.4.3",
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "enzyme": "^3.3.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.11",
+    "jest": "^22.4.3",
+    "node-sass": "^4.9.0",
+    "postcss-loader": "^2.1.5",
+    "react-test-renderer": "^16.3.2",
+    "sass-loader": "^7.0.1",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.8.1"
+  },
+  "dependencies": {
+    "@storybook/addon-knobs": "^3.4.3",
+    "@storybook/addon-notes": "^3.4.3",
+    "path": "^0.12.7",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "storybook-addon-specifications": "^2.1.2"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css|scss)$": "<rootDir>/__test__/styleTest.js"
+    }
+  }
+}

@@ -1,0 +1,101 @@
+$black: #000;
+$white: #fff;
+
+$grey-tab: #adb7c5;
+$grey-light: #6e7b8b;
+$grey-hover: #47515d;
+$grey: #2f353d;
+$grey-medium: #23292f;
+$grey-dark: #161b21;
+
+$orange-light: #fd9d20;
+$orange: #ff7d08;
+$orange-dark: #ba6108;
+
+$blue-light: #46adff;
+$blue: #0d89eb;
+$blue-dark: #076fc1;
+$blue-darker: #1a3b5b;
+
+$red-light: #ff5745;
+$red: #f92b00;
+$red-dark: #b21100;
+
+$green-light: #32db86;
+$green: #28a968;
+$green-dark: #1b8750;
+$green-darker: #00663f;
+
+$purple: purple;
+$purple-light: purple;
+
+$meta: #d8d8d8;
+$meta-light: $white;
+$meta-dark: #bfbfbf;
+
+$facebook: #3b5998;
+$twitter: #1da1f2;
+$youtube: #cd201f;
+$twitch: #6441a5;
+$line: #00c300;
+
+$text: #ededed;
+$text-light: $text;
+$text-strong: $text;
+$text-selection: $blue;
+
+// Bulma Overrides
+$primary: $orange;
+
+$body-background: $grey;
+$background: $grey;
+
+$link-visited: $primary;
+$link-hover: $orange-light;
+$link-invert: $primary;
+
+$family-sans-serif: "Noto Sans Japanese", "Noto Sans", sans-serif;
+$size-1: 30px;
+$size-2: 24px;
+$size-3: 18px;
+$size-4: 16px;
+$size-5: 14px;
+$size-6: 12px;
+$size-7: 10px;
+$size-8: 8px;
+
+$size-large: $size-2;
+$size-medium: $size-3;
+
+$weight-normal: 400;
+$weight-bold: 700;
+$weight-title-normal: 400;
+$weight-title-bold: 400;
+
+$column-gap: 20px;
+$nav-height: 70px;
+$nav-height-dekki: 30px;
+$nav-height-sub: 50px;
+
+$radius: 3px;
+
+$max-width: 1120px;
+$edge-padding: 10px;
+
+$tablet: 769px;
+$iphone4: 320px;
+$iphone5: 374px;
+$iphone6plus: 540px;
+
+
+@mixin sharpen() {
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;
+
+    @media only screen and (min-device-pixel-ratio: 2) {
+        image-rendering: auto;
+    }
+}
