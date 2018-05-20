@@ -11,20 +11,8 @@ import Name from "../src/components/name";
 
 storiesOf('Name', module)
     .addDecorator(withKnobs)
-    .add('Normal',
-        withNotes('Some notes')(() => (
+    .add('Normal', () => (
             <div>
                 <Name name={text('Label', 'Label1')} disabled={boolean('Disabled', false)} onClick={action('button-click')} />
             </div>
-        ))
-            .add('Highlighted', () => (
-                <div>
-                    <Name name={text('Label', 'Label2')} type="highlight" />
-                </div>
-            ))
-            .add('Disabled', () => (
-                <div>
-                    <Name name={text('Label', 'Label3')} type="disabled" />
-                </div>
-            ))
-        );
+        ));
